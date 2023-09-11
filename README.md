@@ -1,5 +1,4 @@
 # Slack-Project
-This is a HNGX first project where I'll show my slack status and credentials
+#### This is a HNGX first project where I'll show my slack user name, profile picture and add some real time data such as showing the UTC Milliseconds and current day of the week.
 
-### Files
-
+### No framework used, purely Vanilla JS.
