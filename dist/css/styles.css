@@ -46,6 +46,9 @@ a{
     border-top-left-radius: 50px;
     border-radius: 50px;
     background-color: #fff;
+    box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
+    -webkit-box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
+    -moz-box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
 }
 
 img{
@@ -147,6 +150,16 @@ img{
 
 
 
+.github-profile a:hover{
+    transition-property: all;
+    transition-duration: 2s;
+    color: var(--clr-primary);
+}
+
+
+
+
+
 
 /* Media queries */
 
@@ -197,9 +210,6 @@ img{
         align-items: center;
         justify-content: space-between;
         padding: 0 20px 0 0;
-        box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
-        -webkit-box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
-        -moz-box-shadow: 4px 10px 9px -2px rgba(214,210,210,0.73);
     }
 
     .lhs
