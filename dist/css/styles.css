@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root
+{
+    --clr-primary:#053B50;
+    --clr-secondary:#176B87;
+    --clr-teal:#64CCC5;
+    --clr-gray:#EEEEEE;
+    --font-1: 'Lexend Deca', sans-serif;
+    --font-2:'Roboto', sans-serif;
+}
+
+body
+{
+    font-family: var(--font-2);
+    font-size: 16px;
+    min-height: 100vh;
+    background-color: var(--clr-gray);
+}
+
+a{
+    color: #333;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+
+.container
+{
+    max-width:1100px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+
+.card
+{
+    padding: 0 0 20px 0;
+    margin:30px 20px;
+    border-top-right-radius:50px;
+    border-top-left-radius: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+#header
+{
+    background-color: var(--clr-primary);
+    /* border: 2px solid; */
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#header .img
+{
+    margin: 20px 0 0 0;
+}
+
+
+
+.img-usr
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#header #user
+{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+#header #slackUserName
+{
+    color:var(--clr-gray);
+    font-size: 29px;
+    font-family: var(--font-1);
+}
+
+#header #track{
+    background-color: var(--clr-gray);
+    padding: 10px;
+    border-radius: 5px;
+    color:var(--clr-secondary);
+}
+
+#header #track h3{
+    font-size: 18px;
+}
+
+#date-time
+{
+    padding: 30px 0;
+}
+
+
+#date-time .day p
+{
+    color: var(--clr-secondary);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--font-1);
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+#date-time .time p{
+    color:var(--clr-secondary);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.github-profile 
+{
+    padding: 20px;
+}
+
+.github-profile p{
+    font-size: 20px;
+    text-align: end;
+    font-family: var(--font-1);
+}
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width:300px)
+{
+
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    #header #slackUserName
+    {
+        font-size: 23px;
+    }
+
+    #header #track
+    {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #header #track h3{
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:768px)
+{
+
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .card
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 0 0;
+    }
+
+    .lhs
+    {
+        width: 60%;
+    }
+
+    .rhs
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;
+    }
+    
+    #header
+    {
+        border-top-right-radius: 0;
+    }
+
+    #date-time
+    {
+        padding: 30px 0 20px 0;
+    }
+
+    .github-profile
+    {
+        padding: 0;
+    }
+}
